@@ -10,7 +10,7 @@ Source0:	http://earthworm.no-ip.com/wp_tray/wp_tray-%{version}.tar.gz
 Patch0:		%{name}-desktop.patch
 URL:		http://earthworm.no-ip.com/wp_tray/
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2.2.4
+BuildRequires:	gtk+2-devel >= 2:2.2.4
 BuildRequires:	libglade2-devel >= 2.0.0
 BuildRequires:	libgnomeui-devel >= 2.4.0
 BuildRequires:	pkgconfig
