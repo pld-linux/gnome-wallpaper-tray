@@ -1,0 +1,18 @@
+--- wp_tray-0.4.6/wp_tray.desktop.in~	2004-09-20 13:18:46.000000000 +0200
++++ wp_tray-0.4.6/wp_tray.desktop.in	2004-09-20 13:18:46.000000000 +0200
+@@ -1,10 +1,10 @@
+-
+ [Desktop Entry]
+-Name=wp_tray Version 0.1
+-Comment=wp_tray Version 0.1
++Encoding=UTF-8
++Name=wp_tray
++Comment=GNOME wallpaper selection tool
++Comment[pl]=Narzędzie dla GNOME do wyboru tapety
+ Exec=wp_tray
+-Icon=@PACKAGE_PIXMAPS_DIR@/ 
+ Terminal=false
+ MultipleArgs=false
+-Type=Application
++Type=GTK;GNOME;Settings;DesktopSettings;
+ 
