@@ -1,11 +1,11 @@
 Summary:	GNOME wallpaper changer lived in notification area
 Name:		gnome-wallpaper-tray
-Version:	0.4.0
+Version:	0.4.4
 Release:	0.1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://earthworm.no-ip.com/wp_tray/wp_tray-%{version}.tar.gz
-# Source0-md5:	6815fefbee11b415d520d5f54cd6155c
+# Source0-md5:	7b81a5c10be1763e549a0a46bed9a746
 URL:		http://earthworm.no-ip.com/wp_tray/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,8 +21,6 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %setup -q -n wp_tray-%{version}
 
 %build
-rm -f missing
-%{__autoconf}
 %configure
 %{__make}
 
