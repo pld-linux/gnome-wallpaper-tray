@@ -6,7 +6,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://earthworm.no-ip.com/wp_tray/wp_tray-%{version}.tar.gz
 # Source0-md5:	6815fefbee11b415d520d5f54cd6155c
-URL:		http://www.nongnu.org/mailnotify/
+URL:		http://earthworm.no-ip.com/wp_tray/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
