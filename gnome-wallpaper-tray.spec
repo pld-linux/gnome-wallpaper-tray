@@ -2,7 +2,7 @@ Summary:	GNOME wallpaper changer lived in notification area
 Summary(pl):	Zmieniacz tapety GNOME obecny w obszarze powiadomieñ
 Name:		gnome-wallpaper-tray
 Version:	0.4.6
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://earthworm.no-ip.com/wp_tray/wp_tray-%{version}.tar.gz
@@ -10,9 +10,9 @@ Source0:	http://earthworm.no-ip.com/wp_tray/wp_tray-%{version}.tar.gz
 Patch0:		%{name}-desktop.patch
 URL:		http://earthworm.no-ip.com/wp_tray/
 BuildRequires:	automake
-BuildRequires:	gtk+2-devel >= 2:2.2.4
-BuildRequires:	libglade2-devel >= 2.0.0
-BuildRequires:	libgnomeui-devel >= 2.4.0
+BuildRequires:	gtk+2-devel >= 2:2.6.3
+BuildRequires:	libglade2-devel >= 1:2.5.1
+BuildRequires:	libgnomeui-devel >= 2.10.0-2
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
