@@ -1,6 +1,7 @@
---- wp_tray-0.4.6/wp_tray.desktop.in~	2004-09-20 13:18:46.000000000 +0200
-+++ wp_tray-0.4.6/wp_tray.desktop.in	2004-09-20 13:18:46.000000000 +0200
-@@ -1,10 +1,10 @@
+diff -urN wp_tray-0.4.6.orig/wp_tray.desktop.in wp_tray-0.4.6/wp_tray.desktop.in
+--- wp_tray-0.4.6.orig/wp_tray.desktop.in	2004-12-02 13:55:26.785341344 +0100
++++ wp_tray-0.4.6/wp_tray.desktop.in	2004-12-02 13:55:55.512974080 +0100
+@@ -1,10 +1,11 @@
 -
  [Desktop Entry]
 -Name=wp_tray Version 0.1
@@ -13,6 +14,7 @@
 -Icon=@PACKAGE_PIXMAPS_DIR@/ 
  Terminal=false
  MultipleArgs=false
--Type=Application
-+Type=GTK;GNOME;Settings;DesktopSettings;
- 
+ Type=Application
+-
++Categories=GTK;GNOME;Settings;DesktopSettings;
++# vi: encoding=utf-8
