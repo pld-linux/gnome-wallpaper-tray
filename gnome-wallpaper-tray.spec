@@ -12,18 +12,18 @@ URL:		http://planetearthworm.com/projects/wp_tray/
 BuildRequires:	automake
 BuildRequires:	boost-filesystem-devel
 BuildRequires:	boost-regex-devel
+BuildRequires:	gconfmm-devel >= 2.6
+BuildRequires:	gnome-panel-devel >= 2.0
 BuildRequires:	gtk+2-devel >= 2:2.6.3
+BuildRequires:	gtkmm-devel >= 2.4
 BuildRequires:	libglade2-devel >= 1:2.5.1
+BuildRequires:	libglademm-devel >= 2.4
+BuildRequires:	libgnomecanvasmm-devel >= 2.6
 BuildRequires:	libgnomeui-devel >= 2.10.0-2
+BuildRequires:	libgnomeuimm-devel >= 2.6
+BuildRequires:	libnotify-devel
+BuildRequires:	libxml++-devel >= 2.6
 BuildRequires:	pkgconfig
-BuildRequires:  libgnomeuimm-devel >= 2.6
-BuildRequires:  gconfmm-devel >= 2.6
-BuildRequires:  gtkmm-devel >= 2.4
-BuildRequires:  libgnomecanvasmm-devel >= 2.6
-BuildRequires:  libglademm-devel >= 2.4
-BuildRequires:  gnome-panel-devel >= 2.0
-BuildRequires:  libxml++-devel >= 2.6
-BuildRequires:  libnotify-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
