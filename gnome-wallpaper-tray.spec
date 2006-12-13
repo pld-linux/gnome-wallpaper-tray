@@ -45,8 +45,8 @@ tapety z menu.
 %build
 cp -f /usr/share/automake/config.* .
 %configure \
-	--with-boostfilesystem=/usr/lib/libboost_filesystem.so \
-	--with-boostregex=/usr/lib/libboost_regex.so 
+	--with-boostfilesystem=/usr/%{_lib}/libboost_filesystem.so \
+	--with-boostregex=/usr/%{_lib}/libboost_regex.so 
 %{__make}
 
 %install
