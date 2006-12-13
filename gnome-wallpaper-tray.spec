@@ -7,7 +7,6 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/wp_tray-%{version}.tar.gz
 # Source0-md5:	27b878b8d3864787388b49e934c1ee60
-Patch0:		%{name}-desktop.patch
 URL:		http://planetearthworm.com/projects/wp_tray/		
 BuildRequires:	automake
 BuildRequires:	boost-filesystem-devel
@@ -40,7 +39,6 @@ tapety z menu.
 
 %prep
 %setup -q -n wp_tray-%{version}
-#%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.* .
@@ -53,7 +51,6 @@ cp -f /usr/share/automake/config.* .
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	gnomemenudir=%{_desktopdir} \
 	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
@@ -64,4 +61,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc NEWS README TODO ChangeLog
 %attr(755,root,root) %{_bindir}/wp_tray
 %{_datadir}/wp_tray
-%{_desktopdir}/*.desktop
+#%{_desktopdir}/*.desktop
