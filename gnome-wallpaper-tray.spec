@@ -8,8 +8,10 @@ Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/wp_tray-%{version}.tar.gz
 # Source0-md5:	27b878b8d3864787388b49e934c1ee60
 Patch0:		%{name}-desktop.patch
-URL:		http://earthworm.no-ip.com/wp_tray/
+URL:		http://planetearthworm.com/projects/wp_tray/		
 BuildRequires:	automake
+BuildRequires:	boost-filesystem-devel
+BuildRequires:	boost-regex-devel
 BuildRequires:	gtk+2-devel >= 2:2.6.3
 BuildRequires:	libglade2-devel >= 1:2.5.1
 BuildRequires:	libgnomeui-devel >= 2.10.0-2
@@ -22,7 +24,6 @@ BuildRequires:  libglademm-devel >= 2.4
 BuildRequires:  gnome-panel-devel >= 2.0
 BuildRequires:  libxml++-devel >= 2.6
 BuildRequires:  libnotify-devel
-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,8 +44,9 @@ tapety z menu.
 
 %build
 cp -f /usr/share/automake/config.* .
-%configure 
-#	--with-boostfilesystem=/usr/
+%configure \
+	--with-boostfilesystem=/usr/lib/libboost_filesystem.so \
+	--with-boostregex=/usr/lib/libboost_regex.so 
 %{__make}
 
 %install
