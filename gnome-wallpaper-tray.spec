@@ -58,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS README TODO ChangeLog
+%doc NEWS README ChangeLog
 %attr(755,root,root) %{_bindir}/wp_tray
 %{_datadir}/wp_tray
 #%{_desktopdir}/*.desktop
