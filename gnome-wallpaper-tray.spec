@@ -1,5 +1,5 @@
 Summary:	GNOME wallpaper changer lived in notification area
-Summary(pl):	Zmieniacz tapety GNOME obecny w obszarze powiadomieñ
+Summary(pl.UTF-8):   Zmieniacz tapety GNOME obecny w obszarze powiadomieÅ„
 Name:		gnome-wallpaper-tray
 Version:	0.5.3
 Release:	0.1
@@ -31,10 +31,10 @@ Notification Area. It gives you a random wallpaper from your chosen
 directory at logon, on a timer, and allows you to select a new
 wallpaper at random from its menu.
 
-%description -l pl
-Wallpaper Tray to narzêdzie do tapet rezyduj±ce w obszarze powiadomieñ
-Panelu GNOME. Daje losow± tapetê z podanego katalogu po zalogowaniu,
-lub po up³ywie jakiego¶ czasu oraz pozwala na losowy wybór nowej
+%description -l pl.UTF-8
+Wallpaper Tray to narzÄ™dzie do tapet rezydujÄ…ce w obszarze powiadomieÅ„
+Panelu GNOME. Daje losowÄ… tapetÄ™ z podanego katalogu po zalogowaniu,
+lub po upÅ‚ywie jakiegoÅ› czasu oraz pozwala na losowy wybÃ³r nowej
 tapety z menu.
 
 %prep
