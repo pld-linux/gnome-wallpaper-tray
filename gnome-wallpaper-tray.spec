@@ -1,5 +1,5 @@
 Summary:	GNOME wallpaper changer lived in notification area
-Summary(pl.UTF-8):   Zmieniacz tapety GNOME obecny w obszarze powiadomień
+Summary(pl.UTF-8):	Zmieniacz tapety GNOME obecny w obszarze powiadomień
 Name:		gnome-wallpaper-tray
 Version:	0.5.3
 Release:	0.1
