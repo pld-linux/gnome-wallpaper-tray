@@ -11,7 +11,8 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/%{realname}-%{version}.tar.gz
 # Source0-md5:	27b878b8d3864787388b49e934c1ee60
-URL:		http://planetearthworm.com/projects/wp_tray/		
+URL:		http://planetearthworm.com/projects/wp_tray/
+Patch0:		%{realname}-location.patch
 BuildRequires:	automake
 BuildRequires:	boost-filesystem-devel
 BuildRequires:	boost-regex-devel
@@ -43,6 +44,7 @@ tapety z menu.
 
 %prep
 %setup -q -n %{realname}-%{version}
+%patch0 -p1
 
 %build
 %configure \
