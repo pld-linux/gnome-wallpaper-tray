@@ -1,3 +1,4 @@
+# TODO: change name for spec to gnome-applet-wallpaper-tray.spec
 %define		realname	wp_tray
 Summary:	GNOME wallpaper changer lived in notification area
 Summary(pl.UTF-8):	Zmieniacz tapety GNOME obecny w obszarze powiadomień
