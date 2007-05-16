@@ -4,7 +4,7 @@ Summary:	GNOME wallpaper changer lived in notification area
 Summary(pl.UTF-8):	Zmieniacz tapety GNOME obecny w obszarze powiadomień
 Name:		gnome-wallpaper-tray
 Version:	0.5.3
-Release:	0.1
+Release:	0.2
 License:	GPL
 Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/%{realname}-%{version}.tar.gz
@@ -47,7 +47,6 @@ cp -f /usr/share/automake/config.* .
 %configure \
 	--with-boostfilesystem=/usr/%{_lib}/libboost_filesystem.so \
 	--with-boostregex=/usr/%{_lib}/libboost_regex.so \
-	--with-gconf-schema-file-dir=%{_sysconfdir}/schemas
 
 %{__make} install \
         DESTDIR=$RPM_BUILD_ROOT \
@@ -77,7 +76,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc NEWS README ChangeLog
-%{_sysconfdir}/schemas/*.schemas
+%{_sysconfdir}/gconf/schemas/*.schemas
 %{_libdir}/bonobo/servers/*.server
 %attr(755,root,root) /usr/%{_lib}/%{realname}
 #%attr(755,root,root) %{_bindir}/%{realname}
