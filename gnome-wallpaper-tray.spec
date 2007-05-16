@@ -1,10 +1,12 @@
 # TODO: change name for spec to gnome-applet-wallpaper-tray.spec
+
 %define		realname	wp_tray
+
 Summary:	GNOME wallpaper changer lived in notification area
 Summary(pl.UTF-8):	Zmieniacz tapety GNOME obecny w obszarze powiadomień
 Name:		gnome-wallpaper-tray
 Version:	0.5.3
-Release:	0.2
+Release:	0.3
 License:	GPL
 Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/%{realname}-%{version}.tar.gz
@@ -58,17 +60,17 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{_realname} --with-gnome --all-name
+%find_lang %{realname} --with-gnome --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %post
-%gconf_schema_install %{_realname}.schemas
+%gconf_schema_install %{realname}.schemas
 %scrollkeeper_update_post
 
 %preun
-%gconf_schema_uninstall %{_realname}.schemas
+%gconf_schema_uninstall %{realname}.schemas
 
 %postun
 %scrollkeeper_update_postun
