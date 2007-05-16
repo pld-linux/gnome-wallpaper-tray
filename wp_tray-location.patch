@@ -1,0 +1,13 @@
+Only in wp_tray-0.5.3: config.log
+diff -ur wp_tray-0.5.3.orig/wp_tray.server wp_tray-0.5.3/wp_tray.server
+--- wp_tray-0.5.3.orig/wp_tray.server	2006-10-25 20:50:08.000000000 +0000
++++ wp_tray-0.5.3/wp_tray.server	2007-05-16 01:35:29.000000000 +0000
+@@ -2,7 +2,7 @@
+ 
+ <oaf_server iid="OAFIID:wp_tray_Factory"
+ 	    type="exe"
+-	    location="/usr/libexec/wp_tray">
++	    location="/usr/lib/wp_tray">
+ 
+ 	<oaf_attribute name="repo_ids" type="stringv">
+ 		<item value="IDL:Bonobo/wp_tray:1.0"/>
