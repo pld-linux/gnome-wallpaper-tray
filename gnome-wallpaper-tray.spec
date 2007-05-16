@@ -45,14 +45,11 @@ tapety z menu.
 %setup -q -n %{realname}-%{version}
 
 %build
-cp -f /usr/share/automake/config.* .
 %configure \
 	--with-boostfilesystem=/usr/%{_lib}/libboost_filesystem.so \
-	--with-boostregex=/usr/%{_lib}/libboost_regex.so \
+	--with-boostregex=/usr/%{_lib}/libboost_regex.so
 
-%{__make} install \
-        DESTDIR=$RPM_BUILD_ROOT \
-        GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
