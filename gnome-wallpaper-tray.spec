@@ -5,12 +5,12 @@
 Summary:	GNOME wallpaper changer lived in notification area
 Summary(pl.UTF-8):	Zmieniacz tapety GNOME obecny w obszarze powiadomień
 Name:		gnome-wallpaper-tray
-Version:	0.5.3
+Version:	0.5.5
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://planetearthworm.com/projects/wp_tray/files/%{realname}-%{version}.tar.gz
-# Source0-md5:	27b878b8d3864787388b49e934c1ee60
+# Source0-md5:	53d3211d2b5c3681e0965180f390537e
 URL:		http://planetearthworm.com/projects/wp_tray/
 Patch0:		%{realname}-location.patch
 BuildRequires:	automake
