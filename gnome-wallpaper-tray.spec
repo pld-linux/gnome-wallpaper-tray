@@ -14,8 +14,7 @@ Source0:	http://planetearthworm.com/projects/wp_tray/files/%{realname}-%{version
 URL:		http://planetearthworm.com/projects/wp_tray/
 Patch0:		%{realname}-location.patch
 BuildRequires:	automake
-BuildRequires:	boost-filesystem-devel
-BuildRequires:	boost-regex-devel
+BuildRequires:	boost-devel >= 1.35.0
 BuildRequires:	gconfmm-devel >= 2.14
 BuildRequires:	gnome-panel-devel >= 2.14
 BuildRequires:	gtk+2-devel >= 2:2.10
